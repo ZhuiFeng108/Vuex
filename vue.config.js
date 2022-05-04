@@ -3,4 +3,11 @@ module.exports = defineConfig({
   transpileDependencies: true,
   // 关闭eslint
   lintOnSave:false,
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@': resolve('src')
+      }
+    }
+  }
 })
